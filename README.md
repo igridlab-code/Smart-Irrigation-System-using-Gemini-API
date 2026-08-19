@@ -68,6 +68,39 @@ The diagram shows the complete system architecture and working flow from image c
 - Switch
 - Water Pipe / Nozzle
 
+- ## 🔌 Hardware Connections
+
+| Component                  | Component Pin  | XIAO ESP32S3 Sense Connection | Status      |
+| -------------------------- | -------------- | ----------------------------- | ----------- |
+| **OV2640 Camera**          | Onboard Camera | Built into XIAO ESP32S3 Sense | ✅ Connected |
+| **SG90 Servo Motor**       | Signal         | **D2 / GPIO3**                | ✅ Connected |
+| **SG90 Servo Motor**       | VCC            | **5V**                        | ✅ Connected |
+| **SG90 Servo Motor**       | GND            | **GND**                       | ✅ Connected |
+| **1-Channel Relay Module** | IN             | **D1 / GPIO2**                | 🔄 Planned  |
+| **1-Channel Relay Module** | VCC            | **5V**                        | 🔄 Planned  |
+| **1-Channel Relay Module** | GND            | **GND**                       | 🔄 Planned  |
+| **Water Pump**             | Positive (+)   | Relay **NO**                  | 🔄 Planned  |
+| **Water Pump**             | Negative (−)   | External Power Supply −       | 🔄 Planned  |
+
+### 📷 Camera
+
+The OV2640 camera is integrated into the Seeed Studio XIAO ESP32S3 Sense and is used to capture plant/soil images.
+
+### ⚙️ Servo Motor
+
+The SG90 servo motor is connected to **D2 / GPIO3** and is used to move the camera to different positions.
+
+### 🔴 Relay Module
+
+The relay is planned to be connected to **D1 / GPIO2**. It will be used to control the water pump.
+
+### 💧 Water Pump
+
+The water pump will be controlled through the relay. The pump should use a suitable external power supply rather than drawing its operating current directly from an ESP32 GPIO pin.
+
+> **Note:** Relay and pump connections are marked as **Planned** because they have not yet been physically connected and tested.
+
+
 ---
 
 ## 💻 Software & Technologies
