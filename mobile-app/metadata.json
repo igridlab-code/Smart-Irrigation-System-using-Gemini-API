@@ -1,0 +1,6 @@
+{
+  "name": "TerraNex",
+  "description": "AI-Powered Smart Irrigation System with Gemini Vision Analysis for plant, soil, and root condition detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
