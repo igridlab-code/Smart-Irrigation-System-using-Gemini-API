@@ -2,25 +2,60 @@
 
 ## 📌 Project Overview
 
-Our Smart Irrigation System is an AI-based automatic irrigation system that monitors the plant condition using a Seeed Studio camera.
+Our Smart Irrigation System is an AI-based automatic irrigation system that monitors plant and soil/root conditions using a Seeed Studio XIAO ESP32S3 Sense camera.
 
-The camera captures an image of the plant/root or soil area and sends the image to the Gemini API for analysis. Gemini AI analyses the image and determines whether the plant area is **Dry or Wet**.
+The camera captures an image of the plant/soil area and sends the image through Wi-Fi for Gemini AI analysis. Gemini AI analyses the captured image and determines whether the observed condition is **Dry or Wet**.
 
-If the plant is detected as **Dry**, the system activates the relay, which turns ON the water pump and supplies water to the plant. If the area is **Wet**, the water pump remains OFF.
+If the condition is detected as **Dry**, the system activates the relay, which turns ON the water pump and supplies water to the plant. If the condition is **Wet**, the water pump remains OFF.
 
-## 🔄 Working Principle
+---
 
-Camera
-↓
-Image Capture
-↓
-Gemini AI Analysis
-↓
-Dry or Wet?
-↓
-Dry → Relay ON → Water Pump ON → Irrigation
-↓
-Wet → Relay OFF
+## ❗ Problem Statement
+
+Traditional irrigation methods often depend on manual monitoring or fixed watering schedules. This can lead to unnecessary water usage and difficulty in continuously monitoring plant conditions.
+
+---
+
+## 🎯 Aim
+
+The aim of this project is to develop an AI-powered smart irrigation system that uses camera-based monitoring and Gemini AI analysis to determine when irrigation is required and automatically control the water supply.
+
+---
+
+## 💡 Proposed Solution
+
+Our proposed system combines **AI, IoT, Computer Vision and automated irrigation**.
+
+A Seeed Studio XIAO ESP32S3 Sense camera captures the plant/soil image. The image is sent through Wi-Fi to the Gemini API for analysis.
+
+Gemini AI determines whether the observed condition is **Dry or Wet**.
+
+- **Dry → Relay ON → Water Pump ON → Irrigation**
+- **Wet → Relay OFF → Water Pump OFF**
+
+---
+
+## 🏗️ System Architecture & Flowchart
+
+![Smart Irrigation System Block Diagram and Flowchart](block%20diagram.png)
+
+The diagram shows the complete system architecture and working flow from image capture and Gemini AI analysis to automatic irrigation.
+
+---
+
+## 🔄 Working Process
+
+1. 📷 Camera captures the plant/soil image.
+2. ⚙️ Seeed Studio XIAO ESP32S3 Sense handles the camera and system control.
+3. 📡 The image is sent through Wi-Fi.
+4. 🤖 Gemini AI analyses the captured image.
+5. 🔍 AI determines whether the condition is **Dry or Wet**.
+6. 💧 If Dry → Relay turns ON → Water Pump turns ON.
+7. 🌱 Water is supplied to the plant.
+8. 🛑 If Wet → Relay remains OFF → Water Pump remains OFF.
+9. 🔁 The process can be repeated for continuous monitoring.
+
+---
 
 ## 🔧 Hardware Components
 
@@ -33,6 +68,8 @@ Wet → Relay OFF
 - Switch
 - Water Pipe / Nozzle
 
+---
+
 ## 💻 Software & Technologies
 
 - Gemini API
@@ -41,6 +78,23 @@ Wet → Relay OFF
 - IoT
 - Computer Vision
 - Embedded Programming
+- Mobile Application
+
+---
+
+## 📱 Mobile Application
+
+The mobile application provides a user-friendly interface for monitoring the smart irrigation system.
+
+The application is intended to display:
+
+- Plant condition
+- AI Dry/Wet analysis
+- Irrigation status
+- Water pump status
+- Camera monitoring information
+
+---
 
 ## ⭐ Key Features
 
@@ -50,27 +104,53 @@ Wet → Relay OFF
 - Gemini API integration
 - Relay-controlled water pump
 - Servo motor camera positioning
-- Reduces unnecessary water usage
+- Mobile application monitoring
+- Reduced unnecessary water usage
 - Minimizes manual intervention
 
-## 🎯 Objective
+---
 
-The main objective of this project is to develop an intelligent irrigation system that uses AI to determine when plants need water and automatically irrigates them.
+## 🎯 Advantages
+
+- 💧 Helps reduce unnecessary water usage
+- 🤖 AI-based irrigation decision
+- 📷 Camera-based plant monitoring
+- ⚙️ Automatic pump control
+- 📱 Mobile monitoring
+- 🌱 Suitable for smart agriculture applications
+
+---
 
 ## 🔮 Future Enhancements
 
-- Mobile application
 - Multiple plant monitoring
 - Real-time notifications
 - Water-level monitoring
 - Weather API integration
 - Cloud-based plant monitoring
 - Plant disease detection
+- Advanced mobile application features
 
-## 👩‍💻 Project
+---
 
-**Project Name:** Smart Irrigation System using Gemini AI
+## 📂 Project Structure
 
-**Technology:** AI + IoT + Computer Vision
-
-**Controller:** Seeed Studio XIAO ESP32S3 Sense
+```text
+Smart-Irrigation-System-using-Gemini-API/
+│
+├── README.md
+├── block diagram.png
+│
+├── camera/
+│   └── camera_code
+│
+├── gemini-ai/
+│   ├── gemini_analysis.py
+│   └── requirements.txt
+│
+├── mobile-app/
+│   └── mobile application source code
+│
+└── hardware/
+    ├── circuit-diagram
+    └── project-images
