@@ -119,20 +119,20 @@ The water pump will be controlled through the relay. The pump should use a suita
 
 ### 📷 Live Camera – Seed Studio Camera
 
-<img width="720" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 08 PM" src="https://github.com/user-attachments/assets/a89571b3-51b7-41f6-a84e-3d023e3527df" />
+<img width="300" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 08 PM" src="https://github.com/user-attachments/assets/a89571b3-51b7-41f6-a84e-3d023e3527df" />
 
 ### 🌱 Choose Image Source
 
-<img width="720" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 07 PM (2)" src="https://github.com/user-attachments/assets/bcac9e5f-c351-4c58-b3f9-224fc1b04c1d" />
+<img width="300" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 07 PM (2)" src="https://github.com/user-attachments/assets/bcac9e5f-c351-4c58-b3f9-224fc1b04c1d" />
 
 ### 📊 Scan History
 
-<img width="720" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 07 PM (1)" src="https://github.com/user-attachments/assets/c8320208-ca0b-45a7-b6e1-b69f5309905e" />
+<img width="300" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 07 PM (1)" src="https://github.com/user-attachments/assets/c8320208-ca0b-45a7-b6e1-b69f5309905e" />
 
 ### 🤖 AI Analysis – Gemini AI
 
-<img width="720" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 06 PM" src="https://github.com/user-attachments/assets/ae2f2765-07dc-4cb2-82a3-7c86bf8120f6" />
-<img width="720" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 06 PM (1)" src="https://github.com/user-attachments/assets/a8e941f4-5eab-4933-8f75-f01c14f57779" />
+<img width="300" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 06 PM" src="https://github.com/user-attachments/assets/ae2f2765-07dc-4cb2-82a3-7c86bf8120f6" />
+<img width="300" height="1600" alt="WhatsApp Image 2026-08-19 at 12 57 06 PM (1)" src="https://github.com/user-attachments/assets/a8e941f4-5eab-4933-8f75-f01c14f57779" />
 
 The mobile application provides a user-friendly interface for monitoring the smart irrigation system.
 
